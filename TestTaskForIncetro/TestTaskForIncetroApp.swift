@@ -11,7 +11,7 @@ import SwiftUI
 struct TestTaskForIncetroApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OrganizationsView()
         }
     }
 }
