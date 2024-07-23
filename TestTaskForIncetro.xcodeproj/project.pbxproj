@@ -7,16 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1855A2182C4FD224009BA481 /* OrganizationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A2112C4FD224009BA481 /* OrganizationDetailView.swift */; };
+		1855A2192C4FD224009BA481 /* OrganizationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A2122C4FD224009BA481 /* OrganizationDetailViewModel.swift */; };
+		1855A21A2C4FD224009BA481 /* RaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A2132C4FD224009BA481 /* RaitingView.swift */; };
+		1855A21B2C4FD224009BA481 /* OrganizationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A2152C4FD224009BA481 /* OrganizationsView.swift */; };
+		1855A21C2C4FD224009BA481 /* OrganizationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A2162C4FD224009BA481 /* OrganizationsViewModel.swift */; };
+		1855A2222C4FD26A009BA481 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A21D2C4FD26A009BA481 /* NetworkManager.swift */; };
+		1855A2232C4FD26A009BA481 /* OrganizationModelDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A21F2C4FD26A009BA481 /* OrganizationModelDetail.swift */; };
+		1855A2242C4FD26A009BA481 /* OrganizationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A2202C4FD26A009BA481 /* OrganizationsModel.swift */; };
 		18AE7FB02C450E8D004DB1FC /* TestTaskForIncetroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE7FAF2C450E8D004DB1FC /* TestTaskForIncetroApp.swift */; };
-		18AE7FB22C450E8D004DB1FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE7FB12C450E8D004DB1FC /* ContentView.swift */; };
 		18AE7FB42C450E8F004DB1FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AE7FB32C450E8F004DB1FC /* Assets.xcassets */; };
 		18AE7FB72C450E8F004DB1FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AE7FB62C450E8F004DB1FC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1855A2112C4FD224009BA481 /* OrganizationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationDetailView.swift; sourceTree = "<group>"; };
+		1855A2122C4FD224009BA481 /* OrganizationDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationDetailViewModel.swift; sourceTree = "<group>"; };
+		1855A2132C4FD224009BA481 /* RaitingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaitingView.swift; sourceTree = "<group>"; };
+		1855A2152C4FD224009BA481 /* OrganizationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationsView.swift; sourceTree = "<group>"; };
+		1855A2162C4FD224009BA481 /* OrganizationsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationsViewModel.swift; sourceTree = "<group>"; };
+		1855A21D2C4FD26A009BA481 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1855A21F2C4FD26A009BA481 /* OrganizationModelDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationModelDetail.swift; sourceTree = "<group>"; };
+		1855A2202C4FD26A009BA481 /* OrganizationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationsModel.swift; sourceTree = "<group>"; };
 		18AE7FAC2C450E8D004DB1FC /* TestTaskForIncetro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskForIncetro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AE7FAF2C450E8D004DB1FC /* TestTaskForIncetroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskForIncetroApp.swift; sourceTree = "<group>"; };
-		18AE7FB12C450E8D004DB1FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18AE7FB32C450E8F004DB1FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18AE7FB62C450E8F004DB1FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +46,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1855A2142C4FD224009BA481 /* OrganizationDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				1855A2112C4FD224009BA481 /* OrganizationDetailView.swift */,
+				1855A2122C4FD224009BA481 /* OrganizationDetailViewModel.swift */,
+				1855A2132C4FD224009BA481 /* RaitingView.swift */,
+			);
+			path = OrganizationDetailView;
+			sourceTree = "<group>";
+		};
+		1855A2172C4FD224009BA481 /* OrganizationsView */ = {
+			isa = PBXGroup;
+			children = (
+				1855A2152C4FD224009BA481 /* OrganizationsView.swift */,
+				1855A2162C4FD224009BA481 /* OrganizationsViewModel.swift */,
+				1855A2142C4FD224009BA481 /* OrganizationDetailView */,
+			);
+			path = OrganizationsView;
+			sourceTree = "<group>";
+		};
+		1855A21E2C4FD26A009BA481 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1855A21D2C4FD26A009BA481 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1855A2212C4FD26A009BA481 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1855A21F2C4FD26A009BA481 /* OrganizationModelDetail.swift */,
+				1855A2202C4FD26A009BA481 /* OrganizationsModel.swift */,
+			);
+			name = Models;
+			path = TestTaskForIncetro/Models;
+			sourceTree = SOURCE_ROOT;
+		};
 		18AE7FA32C450E8D004DB1FC = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				18AE7FAF2C450E8D004DB1FC /* TestTaskForIncetroApp.swift */,
-				18AE7FB12C450E8D004DB1FC /* ContentView.swift */,
+				1855A21E2C4FD26A009BA481 /* Networking */,
+				1855A2212C4FD26A009BA481 /* Models */,
+				1855A2172C4FD224009BA481 /* OrganizationsView */,
 				18AE7FB32C450E8F004DB1FC /* Assets.xcassets */,
 				18AE7FB52C450E8F004DB1FC /* Preview Content */,
 			);
@@ -137,8 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18AE7FB22C450E8D004DB1FC /* ContentView.swift in Sources */,
+				1855A2182C4FD224009BA481 /* OrganizationDetailView.swift in Sources */,
+				1855A2242C4FD26A009BA481 /* OrganizationsModel.swift in Sources */,
+				1855A2232C4FD26A009BA481 /* OrganizationModelDetail.swift in Sources */,
+				1855A21A2C4FD224009BA481 /* RaitingView.swift in Sources */,
+				1855A2192C4FD224009BA481 /* OrganizationDetailViewModel.swift in Sources */,
+				1855A2222C4FD26A009BA481 /* NetworkManager.swift in Sources */,
+				1855A21C2C4FD224009BA481 /* OrganizationsViewModel.swift in Sources */,
 				18AE7FB02C450E8D004DB1FC /* TestTaskForIncetroApp.swift in Sources */,
+				1855A21B2C4FD224009BA481 /* OrganizationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
