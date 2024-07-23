@@ -22,6 +22,7 @@ struct OrganizationsView: View {
                                 ZStack {
                                     VStack {
                                         // избавиться от URL
+                                        // 111
                                         AsyncImage(url: URL(string: "\(organization.photo)")) { image in
                                             image.resizable()
                                                 .frame(height: 160)
