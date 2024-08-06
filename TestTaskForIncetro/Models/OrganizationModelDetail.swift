@@ -9,11 +9,12 @@ import Foundation
 
 struct OrganizationModelDetail: Codable, Identifiable {
     
-    static let `default` = OrganizationModelDetail(id: 1, name: "", categoryName: "", rate: 0, photos: [])
+    static let `default` = OrganizationModelDetail(id: 1, name: "", categoryName: "", rate: 0, photos: [], isFavorite: false)
     
     let id: Int
     let name:  String
     let categoryName: String
     let rate:  Double?
     let photos: [URL]
+    let isFavorite: Bool
 }

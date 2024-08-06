@@ -9,16 +9,16 @@ import Foundation
 
 struct OrganizationsModel: Codable {
     
-    let data: [Data]
+    let data: [OrganizationsData]
 }
 
-struct Data: Codable, Identifiable, Hashable {
+struct OrganizationsData: Codable, Identifiable, Hashable {
     
     let id: Int
     let name: String
-    let photo: String
+    let photo: URL
     let rate: Double?
-    let averageCheck: [String] // Int, but not data in server
+    let averageCheck: [String] 
     let cuisines:  [String]
     let isFavorite: Bool
 }
