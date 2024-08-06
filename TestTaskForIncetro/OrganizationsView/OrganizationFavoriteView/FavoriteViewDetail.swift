@@ -30,7 +30,8 @@ struct FavoriteViewDetail: View {
 }
 
 #Preview {
-    FavoriteViewDetail(organization: OrganizationModelDetail(
+    FavoriteViewDetail(
+        organization: OrganizationModelDetail(
         id: 1,
         name: "Bar",
         categoryName: "",

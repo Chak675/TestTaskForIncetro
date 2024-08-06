@@ -12,8 +12,7 @@ import SwiftUI
 class FavoriteService: ObservableObject {
     
     func addOrganizationsFavorite(id: Int) async throws -> Int {
-        guard let url = URL(string: (HostOrganization.developOrganization.rawValue) + "\(id)/favorite/") else { throw fatalError() }
-        // добавить кастомные ошибки и добавить сюда, что бы убрать worning. 
+        guard let url = URL(string: (HostOrganization.developOrganization.rawValue) + "\(id)/favorite/") else { throw CustomError.network }
         print("addFavorite : \(url)")
         
         var request = URLRequest(url: url)
@@ -26,7 +25,7 @@ class FavoriteService: ObservableObject {
     }
     
     func deleteOrganizationsFavorite(id: Int) async throws -> Bool {
-        guard let url = URL(string: (HostOrganization.developOrganization.rawValue) + "\(id)/favorite/") else { throw fatalError() }
+        guard let url = URL(string: (HostOrganization.developOrganization.rawValue) + "\(id)/favorite/") else { throw CustomError.network }
         print("delFavorite : \(url)")
         
         var request = URLRequest(url: url)

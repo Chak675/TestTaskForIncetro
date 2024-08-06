@@ -14,49 +14,46 @@ struct OrganizationsView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                if !viewModel.favoriteList.isEmpty {
                     VStack {
                         ForEach(viewModel.favoriteList) { organization in
                             NavigationLink(destination: OrganizationDetailView(organizationID: organization.id)) {
-                                ZStack {
-                                    VStack {
-                                        AsyncImage(url: organization.photo) { image in
-                                            image.resizable()
-                                                .frame(height: 160)
-                                                .clipShape(UnevenRoundedRectangle(topLeadingRadius: 25.0, bottomLeadingRadius: 0.0, bottomTrailingRadius: 0.0, topTrailingRadius: 25.0))
-                                        } placeholder: { ProgressView("Loading...") }
-                                        
-                                        HStack {
-                                            Text(organization.name)
-                                                .lineLimit(1)
-                                                .frame(maxWidth: .infinity, alignment: .leading)
+                                    ZStack {
+                                        VStack {
+                                            AsyncImage(url: organization.photo) { image in
+                                                image.resizable()
+                                                    .frame(height: 160)
+                                                    .clipShape(UnevenRoundedRectangle(topLeadingRadius: 25.0, bottomLeadingRadius: 0.0, bottomTrailingRadius: 0.0, topTrailingRadius: 25.0))
+                                            } placeholder: { ProgressView("Loading...") }
                                             
-                                            FavoriteView(organization: organization, viewModel: viewModel)
-                                        }
-                                        
-                                        HStack(spacing: 10) {
-                                            HStack(spacing: 2) {
-                                                Image(systemName: "star.fill")
-                                                Text(String(format: "%.1f", organization.rate ?? 0.0))
+                                            HStack {
+                                                Text(organization.name)
+                                                    .lineLimit(1)
+                                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                                
+                                                FavoriteView(organization: organization, viewModel: viewModel)
                                             }
                                             
-                                            
-                                            if !organization.averageCheck.isEmpty {
-                                                Text("€\(organization.averageCheck.joined(separator: ","))")
+                                            HStack(spacing: 10) {
+                                                HStack(spacing: 2) {
+                                                    Image(systemName: "star.fill")
+                                                    Text(String(format: "%.1f", organization.rate ?? 0.0))
+                                                }
+                                                
+                                                if !organization.averageCheck.isEmpty {
+                                                    Text("€\(organization.averageCheck.joined(separator: ","))")
+                                                        .foregroundStyle(.gray)
+                                                }
+                                                
+                                                Text("\(organization.cuisines.joined(separator: ","))")
                                                     .foregroundStyle(.gray)
                                             }
-                                            
-                                            Text("\(organization.cuisines.joined(separator: ","))")
-                                                .foregroundStyle(.gray)
+                                            .frame(maxWidth: .infinity, alignment: .leading)
                                         }
-                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                        .padding()
+                                        .background(.white.opacity(0.6))
+                                        .clipShape(RoundedRectangle(cornerRadius: 50))
                                     }
-                                    .padding()
-                                    .background(.white.opacity(0.6))
-                                    .clipShape(RoundedRectangle(cornerRadius: 50))
-                                }
                                 .clipShape(RoundedRectangle(cornerRadius: 50))
-                            }
                         }
                     }
                 }

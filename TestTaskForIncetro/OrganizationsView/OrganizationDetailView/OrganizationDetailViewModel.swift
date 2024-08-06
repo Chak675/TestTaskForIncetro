@@ -6,30 +6,20 @@
 //
 
 import Foundation
+import SwiftUI
 
 @MainActor
 class OrganizationDetailViewModel: ObservableObject {
     
-    @Published var organizationsDetail: OrganizationModelDetail = .default
+    @Published var organizationsDetail: OrganizationModelDetail = .default // 1
     @Published var rating = 0.0
-    var favoriteList = OrganizationViewModel()
-    
-    @Published private var organization = [OrganizationModelDetail]()
-    @Published var favoriteCount = 0
-//    @Published var favoriteList = [OrganizationsData]()
-    @Published var showFavorites = false
+    @Published private var organization = [OrganizationModelDetail]()  // 2
+    @Published var showFavorites = false // ?
     
     let favoriteService = FavoriteService()
     
-    init() {
-        $organizationsDetail
-            .compactMap { $0.rate }
-            .assign(to: &$rating)
-    }
-    
-    
     func getOrganizationsDetail(id: Int) async throws {
-        guard let url = URL(string: (HostOrganization.developOrganization.rawValue) + "\(id)/") else { throw fatalError() }
+        guard let url = URL(string: (HostOrganization.developOrganization.rawValue) + "\(id)/") else { throw CustomError.network }
         print("URL for server: \(url)")
         
         var request = URLRequest(url: url)
@@ -55,7 +45,6 @@ class OrganizationDetailViewModel: ObservableObject {
                 isFavorite: true
             )
         }
-        
     }
  
     func removeFromFavorite(id: Int) {
@@ -73,5 +62,6 @@ class OrganizationDetailViewModel: ObservableObject {
                 isFavorite: false
             )
         }
+       
     }
 }

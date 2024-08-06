@@ -11,7 +11,6 @@ struct OrganizationDetailView: View {
     
     let organizationID: Int
     let viewModel = OrganizationDetailViewModel().organizationsDetail
-//    let organizationID = viewModel.id
     
     @StateObject private var viewDetail = OrganizationDetailViewModel()
     @StateObject private var favoriteService = FavoriteService()
@@ -77,7 +76,7 @@ struct OrganizationDetailView: View {
             .navigationTitle("Restaurants")
             .navigationBarTitleDisplayMode(.inline)
         }
-        .environmentObject(favoriteService)
+//        .environmentObject(favoriteService)
         .onAppear {
             Task {
                 try await viewDetail.getOrganizationsDetail(id: organizationID)
@@ -86,6 +85,6 @@ struct OrganizationDetailView: View {
     }
 }
 
-//#Preview {
-////    OrganizationDetailView(organizationID: 2365)
-//}
+#Preview {
+    OrganizationDetailView(organizationID: 2365)
+}

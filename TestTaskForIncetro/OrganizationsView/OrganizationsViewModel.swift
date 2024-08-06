@@ -35,7 +35,7 @@ class OrganizationViewModel: ObservableObject {
     }
     
     func getOrganizations() async throws {
-        guard let url = URL(string: HostOrganization.developOrganizationPageOne.rawValue) else { throw fatalError() }
+        guard let url = URL(string: HostOrganization.developOrganizationPageOne.rawValue) else { throw CustomError.network }
         var request = URLRequest(url: url)
         
         request.addValue("Token \(HostOrganization.token.rawValue)", forHTTPHeaderField: "Authorization")
@@ -61,7 +61,6 @@ class OrganizationViewModel: ObservableObject {
                 isFavorite: true
             )
         }
-        
     }
  
     func removeFromFavorite(id: Int) {

@@ -17,7 +17,7 @@
 		1855A2242C4FD26A009BA481 /* OrganizationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A2202C4FD26A009BA481 /* OrganizationsModel.swift */; };
 		1855A2292C525F5C009BA481 /* FavoriteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A2282C525F5C009BA481 /* FavoriteService.swift */; };
 		1855A22B2C525F94009BA481 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A22A2C525F94009BA481 /* FavoriteView.swift */; };
-		1855A22F2C53CFDF009BA481 /* OrganizationFavoriteTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A22E2C53CFDF009BA481 /* OrganizationFavoriteTask.swift */; };
+		1855A22F2C53CFDF009BA481 /* FavoriteOrganizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A22E2C53CFDF009BA481 /* FavoriteOrganizationModel.swift */; };
 		1855A2312C5830FC009BA481 /* HostOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A2302C5830FC009BA481 /* HostOrganization.swift */; };
 		18AE7FB02C450E8D004DB1FC /* TestTaskForIncetroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE7FAF2C450E8D004DB1FC /* TestTaskForIncetroApp.swift */; };
 		18AE7FB42C450E8F004DB1FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AE7FB32C450E8F004DB1FC /* Assets.xcassets */; };
@@ -36,7 +36,7 @@
 		1855A2202C4FD26A009BA481 /* OrganizationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationsModel.swift; sourceTree = "<group>"; };
 		1855A2282C525F5C009BA481 /* FavoriteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteService.swift; sourceTree = "<group>"; };
 		1855A22A2C525F94009BA481 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
-		1855A22E2C53CFDF009BA481 /* OrganizationFavoriteTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationFavoriteTask.swift; sourceTree = "<group>"; };
+		1855A22E2C53CFDF009BA481 /* FavoriteOrganizationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteOrganizationModel.swift; sourceTree = "<group>"; };
 		1855A2302C5830FC009BA481 /* HostOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostOrganization.swift; sourceTree = "<group>"; };
 		18AE7FAC2C450E8D004DB1FC /* TestTaskForIncetro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskForIncetro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AE7FAF2C450E8D004DB1FC /* TestTaskForIncetroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskForIncetroApp.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			children = (
 				1855A2202C4FD26A009BA481 /* OrganizationsModel.swift */,
 				1855A21F2C4FD26A009BA481 /* OrganizationModelDetail.swift */,
-				1855A22E2C53CFDF009BA481 /* OrganizationFavoriteTask.swift */,
+				1855A22E2C53CFDF009BA481 /* FavoriteOrganizationModel.swift */,
 				1855A2302C5830FC009BA481 /* HostOrganization.swift */,
 			);
 			name = Models;
@@ -222,7 +222,7 @@
 				1855A21A2C4FD224009BA481 /* RaitingView.swift in Sources */,
 				1855A2192C4FD224009BA481 /* OrganizationDetailViewModel.swift in Sources */,
 				1855A2222C4FD26A009BA481 /* NetworkManager.swift in Sources */,
-				1855A22F2C53CFDF009BA481 /* OrganizationFavoriteTask.swift in Sources */,
+				1855A22F2C53CFDF009BA481 /* FavoriteOrganizationModel.swift in Sources */,
 				1855A2312C5830FC009BA481 /* HostOrganization.swift in Sources */,
 				1855A21C2C4FD224009BA481 /* OrganizationsViewModel.swift in Sources */,
 				18DE3F142C5CE2920041398F /* FavoriteViewDetail.swift in Sources */,

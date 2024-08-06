@@ -1,5 +1,5 @@
 //
-//  Host.swift
+//  HostOrganization.swift
 //  TestTaskForIncetro
 //
 //  Created by Zorin Dmitrii on 29.07.2024.
